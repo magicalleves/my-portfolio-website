@@ -227,6 +227,8 @@ function App() {
                 </div>
                 <button type="submit" className="buttonSubmit">Submit message</button>
               </form>
+
+            
               <div className='iconsDiv'>
                 <div className='icon-boxes'>
                   <div className="icon-box">

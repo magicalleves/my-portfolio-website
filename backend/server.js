@@ -23,7 +23,7 @@ app.post('/send-email', (req, res) => {
   const mailOptions = {
     from: 'your-email@gmail.com',
     to: 'eva.gadzhieva@gmail.com',
-    subject: 'New Contact Form Message',
+    subject: 'Message from Portfolio',
     text: message,
   };
 
