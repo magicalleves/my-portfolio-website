@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-1 {
+  color:  #435334; 
+  background: linear-gradient(235deg, #faf1e4, #cedebd, #9eb384, #435334);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+}
+
+#section-2 {
+  color:  #435334;
+  background-color: #CEDEBD; 
+  font-size: 20px;
+}
+    
+#section-3 {
+  background-color: #9EB384; 
+  color: #FAF1E4;
+}
+
+#section-4 {
+  background-color: #9EB384; 
+  /* background-color: #435334; */
+  color: #FAF1E4;
+}
+
+.css-selector {
+  background: linear-gradient(235deg, #faf1e4, #cedebd, #9eb384, #435334);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 92%}
+  50%{background-position:100% 9%}
+  100%{background-position:0% 92%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 92%}
+  50%{background-position:100% 9%}
+  100%{background-position:0% 92%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 92%}
+  50%{background-position:100% 9%}
+  100%{background-position:0% 92%}
+}
+
+#center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 15px;
+}
+
+.navbar a.active {
+  border-radius: 8px;
+  font-weight: 700;
+  color: #2d3822;
+}
+
+.column {
+  flex: 1;    
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;  
+  flex-direction: column;
+}
+
+.experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FAF1E4;
+  border-radius: 15px;
+  width: fit-content;
+  height: 50px;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.download-button button {
+  padding: 10px 11px;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Adding a border with transparency */
+  background: rgba(60, 111, 2, 0.3); /* Less transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  color: #FAF1E4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition effect */
+}
+
+.ContactPage {
+  background-color: #faf1e4;
+  color: #9eb384;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 35px;
+}
+
+.download-button button:hover {
+  background: rgba(158, 179, 132, 0.5); /* More opaque background on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.skillBox {
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border with transparency */
+  border-radius: 10px;
+  color: #faf1e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background: rgba(250, 241, 228, 0.1); /* Slightly tinted background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 20px; /* Padding for better appearance */
+  transition: background 0.3s ease, transform 0.3s ease; /* Transition effect */
+}
+
+.skillBox:hover {
+  background: rgba(250, 241, 228, 0.3); /* More opaque background on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.skillBoxDiv {
+  display: flex;
+  justify-content: left;
+  align-items: space-between;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.progress-bar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #007BFF;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.sideWayWord {
+  transform: rotate(-90deg);
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 45px;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.whiteBoxContent {
+  background-color: #FAF1E4;
+  border-radius: 10px;
+  margin-left: auto;
+}
+
+.textarea-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.textarea-container textarea {
+  width: 460px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d1d1;
+  resize: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+}
+
+.textarea-container .char-limit {
+  align-self: flex-end;
+  font-size: 12px;
+  color: #b1b1b1;
+  margin-top: 5px;
+}
+
+.buttonSubmit {
+  background-color: #9EB384;
+  color: white;
+  width: 500px;
+  height: 45px;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-boxes {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.iconsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+
+  margin-top: 30px;
+}
